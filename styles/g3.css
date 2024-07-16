@@ -56,7 +56,7 @@
     margin: 0 auto;
 }
 .main{
-    border: 5px solid lightseagreen;
+    /* border: 5px solid lightseagreen; */
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -100,32 +100,19 @@
 .banner-image{
     width: 100%;
 }
-
-/* media query for small devices-576px */
-@media screen and (max-width:576px) {
-    .navbar, .nav-lists{
-        flex-direction: column;
-    }
-    .banner-title{
-        font-size: 2rem;
-        font-weight: bold;
-    }
-    .nav-title{
-        font-size: 1.5rem ;
-        font-weight: bold;
-    }
-}
-
 .team-images{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
 }
 .features{
-    align-items: center;
+    /* border: 3px solid sienna; */
+    max-width: 1318px;
+    margin: 0 auto;
+    align-items: center; 
     margin-top: 85px;
-    margin-bottom: 130px;
+    margin-bottom: 130px; 
 }
 .our-feature{
     max-width: 537px;
@@ -149,5 +136,89 @@
     margin-top: 24px;
     margin-bottom: 32px;
 }
+
+/* some facts section */
+.facts-title{
+    font-size: 2.81rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.facts-container{
+    max-width: 1390px;
+    margin: 0px auto;
+    /* background-color: skyblue; */
+    margin-bottom: 180px;
+}
+.fac-boxs{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width:241px;
+    height: 241px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.box-parent{
+    display: grid;
+    border-radius: 8px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 50px;
+   
+}
+.fac-value{
+    font-size: 2.81rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.fac-para{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #727272;
+    margin-top: 0px;
+}
+.facts-des {
+    max-width:542px ;
+}
+
+
+
+/* media query for small devices-576px */
+@media screen and (max-width:576px) {
+
+    .navbar, .nav-lists,.features {
+        flex-direction: column;
+    }
+    .banner-title{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .nav-title{
+        font-size: 1.5rem ;
+        font-weight: bold;
+    }
+    .team-images{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-feature{
+        margin-left: 15px;
+        text-align: center;
+    }
+    .feature-title{
+        font-size: 1.5rem;
+    }
+}
+
+/* media query  for medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .features{
+        flex-direction: column;
+        align-self: center;
+    }
+}
+
+
 
 
