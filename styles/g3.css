@@ -8,3 +8,105 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* .............shared styles & color............... */
+.dis-flex{
+    display: flex;
+}
+
+.dark-1{
+    color: #131313;
+}
+
+.dark-2{
+   color: #424242; 
+}
+.dark-3{
+    color: #727272;
+}
+
+.bg-color{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+
+/* remove list styles */
+.nav-lists{
+    list-style: none;
+}
+
+/* remove anchor underline */
+.nav-lists, a{
+    text-decoration: none;
+}
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* added margin between links */
+.nav-list{
+    margin-right: 30px;
+}
+
+/* navbar & banner align */
+.navbar,.banner-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.banner-content{
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.nav-title{
+    font-size: 3rem ;
+    font-weight: bold;
+}
+.nav-anchor{
+    font-size: 1.125rem;
+    font-weight: 500px;
+}
+/* style banner title */
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.banner-des{
+    font-size: 1rem;
+}
+/* button primary */
+.btn-primary{
+    background-color: #FF900E;
+    color:#FFFFFF;
+    border-radius: 8px;
+    font-weight: 600px;
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    border: none;
+
+}
+/* banner image adjust with align */
+.banner-image{
+    width: 100%;
+}
+
+/* media query for small devices-576px */
+@media screen and (max-width:576px) {
+    .navbar, .nav-lists{
+        flex-direction: column;
+    }
+    .banner-title{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .nav-title{
+        font-size: 1.5rem ;
+        font-weight: bold;
+    }
+}
+
+
