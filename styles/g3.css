@@ -55,6 +55,13 @@
     max-width: 1140px;
     margin: 0 auto;
 }
+.main{
+    border: 5px solid lightseagreen;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
 .banner-content{
     max-width: 860px;
     margin: 0 auto;
@@ -63,7 +70,7 @@
 }
 
 .nav-title{
-    font-size: 3rem ;
+    font-size: 2.81rem ;
     font-weight: bold;
 }
 .nav-anchor{
@@ -107,6 +114,40 @@
         font-size: 1.5rem ;
         font-weight: bold;
     }
+}
+
+.team-images{
+    border: 3px solid blue;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.features{
+    align-items: center;
+    margin-top: 85px;
+    margin-bottom: 130px;
+}
+.our-feature{
+    max-width: 537px;
+    margin: 0 auto;
+    margin-left: 73px;
+
+}
+
+.feature-title{
+    font-size: 2.81rem;
+    font-weight: bold;
+}
+#fe-ti-1{
+    color: #727272 ;
+    font-weight: 500;
+}
+#fe-ti-2{
+    color: #FF900E;
+}
+.feature-des{
+    margin-top: 24px;
+    margin-bottom: 32px;
 }
 
 
