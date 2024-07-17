@@ -101,13 +101,11 @@
     width: 100%;
 }
 .team-images{
-    /* border: 3px solid blue; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
 }
 .features{
-    /* border: 3px solid sienna; */
     max-width: 1318px;
     margin: 0 auto;
     align-items: center; 
@@ -136,8 +134,60 @@
     margin-top: 24px;
     margin-bottom: 32px;
 }
+/* .........................lovely Features........................... */
+.content-title{
+    font-size: 2.81rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.content-des{
+    max-width: 586px;
+}
+.image img{
+    width: 100%;
+}
+.loveEnjoy-container{
+    border: 5px solid lightseagreen;
+    max-width: 1140px;
+    margin: 0 auto;
+    gap: 100px;
+}
+.image{
+    border: 2px solid greenyellow;
+}
+.content{
+    border: 2px solid tomato;
+}
+#verticle-draw{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+.card-title{
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0px;
+}
+.feature-card{
+    max-width: 586px ;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06) ;
+    padding: 30px;
+}
+#exp-badge{
+    padding: 46px 42px;
+    font-size: 1.56rem;
+    font-weight: 500;
+    margin-left: -92px;
+    margin-top: -100px;
+}
+#exp-year{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
 
-/* some facts section */
+/* ..........................some facts section....................... */
 .facts-title{
     font-size: 2.81rem;
     font-weight: bold;
@@ -146,7 +196,6 @@
 .facts-container{
     max-width: 1390px;
     margin: 0px auto;
-    /* background-color: skyblue; */
     margin-bottom: 180px;
 }
 .fac-boxs{
@@ -179,27 +228,49 @@
     color: #727272;
     margin-top: 0px;
 }
+
 .facts-des {
     max-width:542px ;
 }
 
+/* sponspors content section */
+
+.sponspors-content{
+    max-width: 542px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponspors-title{
+    font-size: 2.81rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.sponspors-images{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 130px;
+    gap: 20px;
+}
+.sponspors-images img{
+    filter: grayscale(100%);
+}
 
 
 /* media query for small devices-576px */
 @media screen and (max-width:576px) {
 
-    .navbar, .nav-lists,.features {
+    .navbar, .nav-lists,.features, .loveEnjoy-container {
         flex-direction: column;
     }
     .banner-title{
         font-size: 2rem;
         font-weight: bold;
     }
-    .nav-title{
+    .nav-title, .sponspors-title{
         font-size: 1.5rem ;
         font-weight: bold;
     }
-    .team-images{
+    .team-images,.box-parent,.sponspors-images {
         grid-template-columns: repeat(1,1fr);
     }
     .our-feature{
@@ -209,6 +280,20 @@
     .feature-title{
         font-size: 1.5rem;
     }
+    .box-parent{
+        justify-content: center;
+    }
+    .sponspors-content, .facts-title, .facts-des{
+        text-align: center;
+    }
+    .sponspors-images{
+        justify-items: center;
+    }
+    #exp-badge{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+  
 }
 
 /* media query  for medium device */
@@ -216,6 +301,11 @@
     .features{
         flex-direction: column;
         align-self: center;
+    }
+    .box-parent,.sponspors-images{
+        grid-template-columns: repeat(2,1fr);
+        /* justify-content: center; */
+        justify-items: center;
     }
 }
 
