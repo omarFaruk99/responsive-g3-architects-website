@@ -147,16 +147,9 @@
     width: 100%;
 }
 .loveEnjoy-container{
-    border: 5px solid lightseagreen;
     max-width: 1140px;
     margin: 0 auto;
     gap: 100px;
-}
-.image{
-    border: 2px solid greenyellow;
-}
-.content{
-    border: 2px solid tomato;
 }
 #verticle-draw{
     border-left: 5px solid #FF900E;
