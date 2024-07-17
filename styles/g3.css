@@ -248,6 +248,20 @@
     filter: grayscale(100%);
 }
 
+/* ...................footer.................. */
+.footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #FFF4E7 ;
+    font-size: 1.25rem;
+    padding: 39px;
+    border-radius: 8px;
+    text-align: center;
+}
+footer {
+    margin: 130px 240px;
+}
+
 
 /* media query for small devices-576px */
 @media screen and (max-width:576px) {
